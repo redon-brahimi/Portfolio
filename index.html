@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="scroll">
+        <div class="container">
+            <img src="ressources/photo.png" alt="Profile Photo" class="profile-image">
+            <h1>Redon Brahimi</h1>
+            <p class="title">Full Stack Developer</p>
+        </div>
+    </section>
+
+    <section id="about" class="scroll">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600" alt="Working on laptop" class="about-image">
+                    <p>I'm Redon Brahimi, a computer science student at IUT2 de Grenoble with a strong interest in technology, creativity, and human connection. My core technical skills include web development, Java programming, and data science. I enjoy using tools like Visual Studio Code, GitHub for collaborative development, and ChatGPT to support my work and learning.
+                        Beyond coding, I'm a natural communicator and fluent in three languages: Albanian, English, and French. I enjoy meeting new people, exchanging ideas, and working as part of a team.
+                        </p>
+            </div>
+			<div class="about-content" id="abct2">                    
+				<p>
+                    I’m passionate about problem-solving and thinking outside the box, always looking for innovative approaches to challenges.
+                    Outside of academics, I’m very active — I play basketball with a team and go to the gym five times a week. This discipline and team spirit also influence my approach to work. My goal is to become a full stack developer and eventually lead as a team manager. I’m driven by continuous learning, meaningful collaboration, and the desire to make an impact.
+                    
+                </p>
+                <img src="ressources/basket.avif" alt="Working on laptop" class="about-image">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="scroll">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="ressources/internet.png" alt="E-Commerce Platform" class="project-image">
+                    <h3>Institutional Website for a Digital Company</h3>
+                    <p>In this group project, we created a complete institutional website for a major digital company, aimed at Generation Alpha—specifically 3rd-year middle school students exploring career paths and internships. Our work included researching the company’s structure, services, and digital/ecological transition, then translating that into accessible, engaging content. We designed mockups, gathered user needs, and developed a functional, eco-conscious website with clear navigation and simplified language tailored to a non-specialist audience.</p>
+                </div>
+                <div class="project-card">
+                    <img src="ressources/server.png" alt="Task Management App" class="project-image">
+                    <h3> Debian Server Setup & Web Stack Deployment</h3>
+                    <p>As part of a systems administration module, I set up a minimal Debian 12 server using QEMU/KVM virtualization, configured without a graphical interface for performance and security. I installed and configured key web technologies, including Apache, PostgreSQL, PHP, and PhpPgAdmin. The project included verifying network connectivity, managing services via the command line, setting up SSH access with port forwarding, and securing PostgreSQL with hashed credentials.
+                        This hands-on experience strengthened my skills in Linux system administration, virtualization, and deploying web application infrastructure.</p>
+                </div>
+            </div>
+			<div class="project-grid">
+                <div class="project-card">
+                    <img src="ressources/database.png" alt="E-Commerce Platform" class="project-image">
+                    <h3>Road Accident Data Analysis</h3>
+                    <p>In this data-driven project, we analyzed over 15 years of French road accident records from the national open data repository. Working in a team of two, we cleaned, transformed, and explored the dataset using PostgreSQL and statistical tools like R. The goal was to answer a specific public-interest question through visual data storytelling and insightful charts.
+                        We addressed data quality issues (missing values, inconsistencies), handled multi-year schema variations, and applied basic project management methods (risk assessment, timeline planning). This project offered a first real-world experience in data science workflows, from raw data to meaningful public communication.</p>
+                </div>
+                <div class="project-card">
+                    <img src="ressources/coding.png" alt="Task Management App" class="project-image">
+                    <h3>Content Classification - Machine Learning</h3>
+                    <p>This project focuses on developing an automatic classification system for news articles. The objective was to assign each news snippet to a category based on its content. In the first phase, classification was done using manually constructed lexicons with weighted keywords. In the second phase, I implemented a machine learning-inspired method to generate these lexicons automatically by analyzing word frequency and specificity across categories. The project highlights my skills in natural language processing, algorithm design, and object-oriented programming in Java.</p>
+                </div>
+            </div>
+        </div>
+		
+    </section>
+
+    <section id="contact" class="abt">
+        <div class="ccontainer">
+            <h2>Contact me</h2>
+            <form>
+                <!-- Wrapper for First Name -->
+                <div>
+                  <label for="fname">First name:</label>
+                  <input type="text" id="fname" name="fname" >
+                </div>
+          
+                <!-- Wrapper for Last Name -->
+                <div>
+                  <label for="lname">Last name:</label>
+                  <input type="text" id="lname" name="lname">
+                </div>
+          
+                <!-- Wrapper for Email -->
+                <div>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email">
+                </div>
+          
+                <!-- Wrapper for Subject -->
+                <div>
+                  <label for="subject">Message:</label>
+                  <textarea id="subject" name="subject"></textarea>
+                </div>
+          
+                <!-- Wrapper for Submit Button -->
+                <div>
+                  <input type="submit" value="Submit">
+                </div>
+              </form>
+          </div>
+          <div id="links">
+            
+          </div>
+    </section>
+
+    <footer>
+        <div>
+            <p>&copy Redon Brahimi</p>
+            <a href="https://www.linkedin.com/in/redon-brahimi-b49a30369/"><img src="ressources/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/redon-brahimi"><img src="ressources/github.png" alt="GitHub"></a>
+        </div>
+    </footer>
+</body>
+</html>
