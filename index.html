@@ -11,7 +11,6 @@
         <nav aria-label="Navigation principale">
             <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -39,46 +38,59 @@
                 </div>
                 <div class="about-content" id="abct2">                    
                     <p>
-                        Mon approche est guidée par la rigueur et l'innovation. En dehors du code, je pratique le basket en compétition et la musculation, ce qui forge mon esprit d'équipe et ma discipline. Mon objectif est de devenir développeur Full Stack puis chef d'équipe, tout en continuant à créer des solutions à fort impact[cite: 5].
+                        Je suis passionné par la résolution de problèmes. En dehors du code, je pratique le basket en compétition et la musculation, ce qui forge mon esprit d'équipe et ma discipline. Mon objectif est de devenir développeur Full Stack puis chef d'équipe, tout en continuant à créer des solutions à fort impact.
                     </p>
                     <img src="ressources/basket.avif" alt="Terrain de basket" class="about-image">
                 </div>
             </div>
         </section>
 
-        <!-- NOUVELLE SECTION EXPÉRIENCE -->
-        <section id="experience" class="scroll" aria-labelledby="exp-heading">
-            <div class="container">
-                <h2 id="exp-heading">Expérience & Projets d'envergure</h2>
-                <div class="project-grid">
-                    <article class="project-card">
-                        <h3>Stage : Espace Call (2026)</h3>
-                        <p>Conception et développement full-stack d'une application de gestion commerciale (RDV, réparations, stocks).</p>
-                        <ul class="tech-list">
-                            <li><strong>Stack :</strong> Node.js, Express, React, PostgreSQL.</li>
-                            <li><strong>DevOps :</strong> Docker, Azure.</li>
-                            <li><strong>Accessibilité :</strong> Intégration stricte des normes WCAG et ARIA.</li>
-                        </ul>
-                    </article>
-                    <article class="project-card">
-                        <h3>Application Entraide (2025-2026)</h3>
-                        <p>Pilotage technique d'un projet de 2 600 heures en React/Node.js pour personnes en perte d'autonomie. Lauréat du prix du meilleur prototype.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
         <section id="projects" class="scroll" aria-labelledby="projects-heading">
             <div class="container">
-                <h2 id="projects-heading">Mes Projets académiques</h2>
+                <h2 id="projects-heading">My Projects</h2>
+                
+                <!-- PROJET STAGE : ESPACE CALL -->
                 <div class="project-grid">
-                    <article class="project-card">
-                        <h3>Classification ML</h3>
-                        <p>Système de classification automatique de dépêches utilisant une approche lexicale et K-Nearest Neighbors en Java.</p>
+                    <article class="project-card" aria-labelledby="espace-call-title">
+                        <img src="ressources/server.png" alt="Dashboard interface" class="project-image">
+                        <h3 id="espace-call-title">Application web - Espace Call</h3>
+                        <p>Stage de fin d'étude : Conception et développement full-stack d'une plateforme de gestion des rendez-vous et des réparations[cite: 2].</p>
+                        <ul class="tech-list" aria-label="Technologies utilisées">
+                            <li><strong>Back-end :</strong> Node.js, Express, PostgreSQL[cite: 2].</li>
+                            <li><strong>Front-end :</strong> Interface accessible (WCAG/ARIA) avec React & Tailwind CSS[cite: 2].</li>
+                            <li><strong>Infrastructure :</strong> Déploiement conteneurisé avec Docker sur Microsoft Azure[cite: 2].</li>
+                        </ul>
+                        <div class="project-actions">
+                            <a href="https://github.com/redon-brahimi/yh38" class="action-btn" aria-label="Voir le code source sur GitHub">Code source[cite: 1]</a>
+                        </div>
                     </article>
-                    <article class="project-card">
-                        <h3>Analyse de données routières</h3>
-                        <p>Analyse de 15 ans d'accidents routiers (OpenData France) avec PostgreSQL et R pour le storytelling de données.</p>
+
+                    <article class="project-card" aria-labelledby="institutional-site-title">
+                        <img src="ressources/internet.png" alt="Website design" class="project-image">
+                        <h3 id="institutional-site-title">Website for Digital Company</h3>
+                        <p>Création d'un site web institutionnel complet pour une grande entreprise numérique, ciblant les élèves de 3ème. Focus sur l'accessibilité et le langage simplifié.</p>
+                    </article>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card" aria-labelledby="debian-server-title">
+                        <img src="ressources/server.png" alt="Server rack" class="project-image">
+                        <h3 id="debian-server-title">Debian Server & Web Stack</h3>
+                        <p>Installation d'un serveur Debian 12 (KVM), configuration d'Apache, PostgreSQL et PHP pour le déploiement d'une stack web sécurisée et performante.</p>
+                    </article>
+
+                    <article class="project-card" aria-labelledby="data-analysis-title">
+                        <img src="ressources/database.png" alt="Charts" class="project-image">
+                        <h3 id="data-analysis-title">Road Accident Data Analysis</h3>
+                        <p>Analyse de 15 ans de données d'accidents routiers français. Nettoyage, transformation et storytelling de données avec PostgreSQL et R.</p>
+                    </article>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card" aria-labelledby="machine-learning-title">
+                        <img src="ressources/coding.png" alt="Programming code" class="project-image">
+                        <h3 id="machine-learning-title">Content Classification - ML</h3>
+                        <p>Système de classification automatique de dépêches. Développement d'un algorithme de génération automatique de lexiques pour catégoriser des articles en Java.</p>
                     </article>
                 </div>
             </div>
@@ -86,7 +98,7 @@
 
         <section id="contact" class="abt" aria-labelledby="contact-heading">
             <div class="ccontainer">
-                <h2 id="contact-heading">Contactez-moi</h2>
+                <h2 id="contact-heading">Contact me</h2>
                 <form action="#" method="POST">
                     <div><label for="fname">Prénom:</label><input type="text" id="fname" name="fname" autocomplete="given-name"></div>
                     <div><label for="lname">Nom:</label><input type="text" id="lname" name="lname" autocomplete="family-name"></div>
