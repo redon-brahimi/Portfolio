@@ -218,7 +218,7 @@
                         </div>
                     </div>
 
-                    <form action="https://formspree.io/f/your_form_id" method="POST" class="contact-form">
+                    <form class="contact-form" aria-describedby="contact-form-status">
                         <div>
                             <label for="fname">Prénom</label>
                             <input type="text" id="fname" name="fname" autocomplete="given-name" placeholder="Votre prénom" required>
@@ -235,8 +235,9 @@
                             <label for="message">Message</label>
                             <textarea id="message" name="message" placeholder="Votre message ici..." required></textarea>
                         </div>
+                        <p id="contact-form-status" class="form-status" role="status">Le formulaire sera bientôt activé. Vous pouvez déjà me joindre via LinkedIn ou GitHub.</p>
                         <div>
-                            <button type="submit" class="button button-primary submit-btn">Envoyer</button>
+                            <button type="submit" class="button button-primary submit-btn" disabled aria-disabled="true">Formulaire bientôt disponible</button>
                         </div>
                     </form>
                 </div>

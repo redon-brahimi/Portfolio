@@ -513,6 +513,19 @@ textarea:focus-visible {
     width: 100%;
 }
 
+.submit-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    transform: none;
+    box-shadow: none;
+}
+
+.form-status {
+    margin: 0;
+    color: #c7d6f2;
+    font-size: 0.95rem;
+}
+
 .site-footer {
     padding: 0 0 3rem;
 }
