@@ -24,6 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
         tab.addEventListener('keydown', (event) => {
             const moveNext = event.key === 'ArrowDown' || event.key === 'ArrowRight';
             const movePrev = event.key === 'ArrowUp' || event.key === 'ArrowLeft';
+            const activateCurrent = event.key === 'Enter' || event.key === ' ';
+
+            if (activateCurrent) {
+                event.preventDefault();
+                activateProject(tab.dataset.project);
+                return;
+            }
 
             if (!moveNext && !movePrev) {
                 return;
