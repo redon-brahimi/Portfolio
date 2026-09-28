@@ -4,142 +4,261 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Redon Brahimi</title>
+    <meta name="description" content="Portfolio de Redon Brahimi, développeur full stack et étudiant en BUT Informatique.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav aria-label="Navigation principale">
-            <a href="#home">Accueil</a>
-            <a href="#about">À propos</a>
-            <a href="#projects">Projets</a>
-            <a href="#contact">Contactez-moi</a>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home" class="scroll">
-            <div class="container">
-                <img src="ressources/photo.jpg" alt="Portrait de Redon Brahimi" class="profile-image">
-                <h1>Redon Brahimi</h1>
-                <p class="title">Développeur Full Stack | Étudiant BUT Informatique</p>
+    <div class="page-shell">
+        <header class="site-header">
+            <div class="container header-content">
+                <a href="#home" class="brand" aria-label="Retour à l'accueil">
+                    <span class="brand-mark">RB</span>
+                    <span class="brand-text">Redon Brahimi</span>
+                </a>
+                <nav aria-label="Navigation principale" class="site-nav">
+                    <a href="#about">À propos</a>
+                    <a href="#projects">Projets</a>
+                    <a href="#contact">Contact</a>
+                </nav>
             </div>
-        </section>
+        </header>
 
-        <section id="about" class="scroll" aria-labelledby="about-heading">
-            <div class="container">
-                <h2 id="about-heading">À propos de moi</h2>
-                <div class="about-content">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600" alt="Bureau avec ordinateur" class="about-image">
-                    <p>
-                        Étudiant en BUT Informatique à l'IUT2 de Grenoble, je suis passionné par le développement logiciel et l'administration système. 
-                        Expert en Java, PHP et SQL, j'ai également développé des compétences solides en outils DevOps (Docker, Linux, GitHub).
-                        Trilingue (Albanais, Anglais, Français), j'aime travailler en équipe et relever des défis techniques.
-                    </p>
-                </div>
-                <div class="about-content" id="abct2">                    
-                    <p>
-                        Je suis passionné par la résolution de problèmes. En dehors du code, je pratique le basket en compétition et la musculation, ce qui forge mon esprit d'équipe et ma discipline. Mon objectif est de devenir développeur Full Stack puis chef d'équipe, tout en continuant à créer des solutions à fort impact.
-                    </p>
-                    <img src="ressources/basket.avif" alt="Terrain de basket" class="about-image">
-                </div>
-            </div>
-        </section>
+        <main>
+            <section id="home" class="hero-section">
+                <div class="container hero-layout">
+                    <div class="hero-copy">
+                        <p class="eyebrow">Portfolio professionnel</p>
+                        <h1>Développeur Full Stack avec une vision produit, technique et humaine.</h1>
+                        <p class="hero-summary">
+                            Je m'appelle Redon Brahimi, étudiant en BUT Informatique, passionné par le développement logiciel,
+                            l'administration système et la création de solutions fiables, accessibles et utiles.
+                        </p>
+                        <div class="hero-highlights" aria-label="Compétences principales">
+                            <span>Java</span>
+                            <span>PHP</span>
+                            <span>SQL</span>
+                            <span>Docker</span>
+                            <span>Linux</span>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="hero-actions">
+                            <a href="#projects" class="button button-primary">Voir mes projets</a>
+                            <a href="#contact" class="button button-secondary">Me contacter</a>
+                        </div>
+                    </div>
 
-        <section id="projects" class="scroll" aria-labelledby="projects-heading">
-            <div class="container">
-                <h2 id="projects-heading">Mes Projets</h2>
-                
-                <!-- PROJET STAGE : ESPACE CALL -->
-                <div class="project-grid">
-                    <article class="project-card" aria-labelledby="espace-call-title">
-                        <div class="project-card-inner">
-                            <div class="project-card-front">
+                    <aside class="hero-panel" aria-label="Présentation de Redon Brahimi">
+                        <img src="ressources/photo.png" alt="Portrait de Redon Brahimi" class="profile-image">
+                        <div class="hero-panel-content">
+                            <p class="hero-panel-label">Redon Brahimi</p>
+                            <p class="hero-panel-role">Développeur Full Stack | Étudiant BUT Informatique</p>
+                            <ul class="hero-facts">
+                                <li>Approche orientée qualité, accessibilité et performance</li>
+                                <li>Trilingue : Albanais, Anglais, Français</li>
+                                <li>Intérêt fort pour le développement, le système et le DevOps</li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+            <section id="about" class="content-section" aria-labelledby="about-heading">
+                <div class="container">
+                    <div class="section-heading">
+                        <p class="eyebrow">À propos</p>
+                        <h2 id="about-heading">Un profil polyvalent, structuré et tourné vers l'impact.</h2>
+                    </div>
+
+                    <div class="about-grid">
+                        <article class="info-card about-card">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600" alt="Bureau avec ordinateur" class="about-image">
+                            <div class="about-text">
+                                <p>
+                                    Étudiant en BUT Informatique à l'IUT2 de Grenoble, je suis passionné par le développement logiciel et l'administration système.
+                                    Expert en Java, PHP et SQL, j'ai également développé des compétences solides en outils DevOps (Docker, Linux, GitHub).
+                                    Trilingue (Albanais, Anglais, Français), j'aime travailler en équipe et relever des défis techniques.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="info-card about-card reverse">
+                            <img src="ressources/basket.avif" alt="Terrain de basket" class="about-image">
+                            <div class="about-text">
+                                <p>
+                                    Je suis passionné par la résolution de problèmes. En dehors du code, je pratique le basket en compétition et la musculation,
+                                    ce qui forge mon esprit d'équipe et ma discipline. Mon objectif est de devenir développeur Full Stack puis chef d'équipe,
+                                    tout en continuant à créer des solutions à fort impact.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="content-section projects-section" aria-labelledby="projects-heading">
+                <div class="container">
+                    <div class="section-heading projects-heading-row">
+                        <div>
+                            <p class="eyebrow">Sélection de projets</p>
+                            <h2 id="projects-heading">Des réalisations concrètes autour du web, de la data et de l'infrastructure.</h2>
+                        </div>
+                        <p class="section-note">Sélectionnez un projet pour afficher son détail.</p>
+                    </div>
+
+                    <div class="projects-layout">
+                        <div class="project-list" role="tablist" aria-label="Liste des projets">
+                            <button class="project-tab active" type="button" role="tab" aria-selected="true" aria-controls="project-espace-call" id="tab-espace-call" data-project="espace-call">
+                                <span class="project-tab-index">01</span>
+                                <span>
+                                    <strong>Application web - Espace Call</strong>
+                                    <small>Plateforme full-stack de gestion des rendez-vous et réparations</small>
+                                </span>
+                            </button>
+
+                            <button class="project-tab" type="button" role="tab" aria-selected="false" aria-controls="project-institutional-site" id="tab-institutional-site" data-project="institutional-site">
+                                <span class="project-tab-index">02</span>
+                                <span>
+                                    <strong>Site pour Entreprise Numérique</strong>
+                                    <small>Site institutionnel pensé pour l'accessibilité et la pédagogie</small>
+                                </span>
+                            </button>
+
+                            <button class="project-tab" type="button" role="tab" aria-selected="false" aria-controls="project-debian-server" id="tab-debian-server" data-project="debian-server">
+                                <span class="project-tab-index">03</span>
+                                <span>
+                                    <strong>Serveur Debian &amp; Stack Web</strong>
+                                    <small>Déploiement d'une stack web sécurisée et performante</small>
+                                </span>
+                            </button>
+
+                            <button class="project-tab" type="button" role="tab" aria-selected="false" aria-controls="project-data-analysis" id="tab-data-analysis" data-project="data-analysis">
+                                <span class="project-tab-index">04</span>
+                                <span>
+                                    <strong>Analyse d'Accidents Routiers</strong>
+                                    <small>Exploration et storytelling de 15 ans de données</small>
+                                </span>
+                            </button>
+
+                            <button class="project-tab" type="button" role="tab" aria-selected="false" aria-controls="project-machine-learning" id="tab-machine-learning" data-project="machine-learning">
+                                <span class="project-tab-index">05</span>
+                                <span>
+                                    <strong>Classification de Contenu - ML</strong>
+                                    <small>Automatisation de la catégorisation d'articles en Java</small>
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="project-panels">
+                            <article class="project-panel active" id="project-espace-call" role="tabpanel" aria-labelledby="tab-espace-call">
                                 <img src="ressources/server.png" alt="Dashboard interface" class="project-image">
-                                <h3 id="espace-call-title">Application web - Espace Call</h3>
-                            </div>
-                            <div class="project-card-back">
-                                <p>Stage de fin d'étude : Conception et développement full-stack d'une plateforme de gestion des rendez-vous et des réparations.</p>
-                                <ul class="tech-list" aria-label="Technologies utilisées">
-                                    <li><strong>Back-end :</strong> Node.js, Express, PostgreSQL.</li>
-                                    <li><strong>Front-end :</strong> Interface accessible (WCAG/ARIA) avec React & Tailwind CSS.</li>
-                                    <li><strong>Infrastructure :</strong> Déploiement conteneurisé avec Docker sur Microsoft Azure.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </article>
+                                <div class="project-panel-content">
+                                    <p class="project-kicker">Projet 01</p>
+                                    <h3>Application web - Espace Call</h3>
+                                    <p>Stage de fin d'étude : conception et développement full-stack d'une plateforme de gestion des rendez-vous et des réparations.</p>
+                                    <ul class="tech-list" aria-label="Technologies utilisées pour Espace Call">
+                                        <li><strong>Back-end :</strong> Node.js, Express, PostgreSQL.</li>
+                                        <li><strong>Front-end :</strong> Interface accessible (WCAG/ARIA) avec React &amp; Tailwind CSS.</li>
+                                        <li><strong>Infrastructure :</strong> Déploiement conteneurisé avec Docker sur Microsoft Azure.</li>
+                                    </ul>
+                                </div>
+                            </article>
 
-                    <article class="project-card" aria-labelledby="institutional-site-title">
-                        <div class="project-card-inner">
-                            <div class="project-card-front">
+                            <article class="project-panel" id="project-institutional-site" role="tabpanel" aria-labelledby="tab-institutional-site" hidden>
                                 <img src="ressources/internet.png" alt="Website design" class="project-image">
-                                <h3 id="institutional-site-title">Site pour Entreprise Numérique</h3>
-                            </div>
-                            <div class="project-card-back">
-                                <p>Création d'un site web institutionnel complet pour une grande entreprise numérique, ciblant les élèves de 3ème. Focus sur l'accessibilité et le langage simplifié.</p>
-                            </div>
-                        </div>
-                    </article>
+                                <div class="project-panel-content">
+                                    <p class="project-kicker">Projet 02</p>
+                                    <h3>Site pour Entreprise Numérique</h3>
+                                    <p>Création d'un site web institutionnel complet pour une grande entreprise numérique, ciblant les élèves de 3ème. Focus sur l'accessibilité et le langage simplifié.</p>
+                                </div>
+                            </article>
 
-                    <article class="project-card" aria-labelledby="debian-server-title">
-                        <div class="project-card-inner">
-                            <div class="project-card-front">
+                            <article class="project-panel" id="project-debian-server" role="tabpanel" aria-labelledby="tab-debian-server" hidden>
                                 <img src="ressources/server.png" alt="Server rack" class="project-image">
-                                <h3 id="debian-server-title">Serveur Debian & Stack Web</h3>
-                            </div>
-                            <div class="project-card-back">
-                                <p>Installation d'un serveur Debian 12 (KVM), configuration d'Apache, PostgreSQL et PHP pour le déploiement d'une stack web sécurisée et performante.</p>
-                            </div>
-                        </div>
-                    </article>
+                                <div class="project-panel-content">
+                                    <p class="project-kicker">Projet 03</p>
+                                    <h3>Serveur Debian &amp; Stack Web</h3>
+                                    <p>Installation d'un serveur Debian 12 (KVM), configuration d'Apache, PostgreSQL et PHP pour le déploiement d'une stack web sécurisée et performante.</p>
+                                </div>
+                            </article>
 
-                    <article class="project-card" aria-labelledby="data-analysis-title">
-                        <div class="project-card-inner">
-                            <div class="project-card-front">
+                            <article class="project-panel" id="project-data-analysis" role="tabpanel" aria-labelledby="tab-data-analysis" hidden>
                                 <img src="ressources/database.png" alt="Charts" class="project-image">
-                                <h3 id="data-analysis-title">Analyse d'Accidents Routiers</h3>
-                            </div>
-                            <div class="project-card-back">
-                                <p>Analyse de 15 ans de données d'accidents routiers français. Nettoyage, transformation et storytelling de données avec PostgreSQL et R.</p>
-                            </div>
-                        </div>
-                    </article>
+                                <div class="project-panel-content">
+                                    <p class="project-kicker">Projet 04</p>
+                                    <h3>Analyse d'Accidents Routiers</h3>
+                                    <p>Analyse de 15 ans de données d'accidents routiers français. Nettoyage, transformation et storytelling de données avec PostgreSQL et R.</p>
+                                </div>
+                            </article>
 
-                    <article class="project-card" aria-labelledby="machine-learning-title">
-                        <div class="project-card-inner">
-                            <div class="project-card-front">
+                            <article class="project-panel" id="project-machine-learning" role="tabpanel" aria-labelledby="tab-machine-learning" hidden>
                                 <img src="ressources/coding.png" alt="Programming code" class="project-image">
-                                <h3 id="machine-learning-title">Classification de Contenu - ML</h3>
+                                <div class="project-panel-content">
+                                    <p class="project-kicker">Projet 05</p>
+                                    <h3>Classification de Contenu - ML</h3>
+                                    <p>Système de classification automatique de dépêches. Développement d'un algorithme de génération automatique de lexiques pour catégoriser des articles en Java.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="content-section" aria-labelledby="contact-heading">
+                <div class="container contact-layout">
+                    <div class="contact-copy">
+                        <p class="eyebrow">Contact</p>
+                        <h2 id="contact-heading">Parlons de vos besoins, d'une opportunité ou d'un projet.</h2>
+                        <p>
+                            Je reste disponible pour échanger autour du développement full stack, des sujets systèmes,
+                            des projets orientés accessibilité ou des environnements techniques à fort enjeu.
+                        </p>
+                        <div class="social-links" aria-label="Profils professionnels">
+                            <a href="https://www.linkedin.com/in/redon-brahimi-b49a30369/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            <a href="https://github.com/redon-brahimi" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-panel contact-preview" aria-labelledby="contact-preview-heading" aria-describedby="contact-form-status">
+                        <h3 id="contact-preview-heading">Préparer votre message</h3>
+                        <div class="contact-preview-grid">
+                            <div class="preview-field">
+                                <span>Prénom</span>
+                                <p>Votre prénom</p>
                             </div>
-                            <div class="project-card-back">
-                                <p>Système de classification automatique de dépêches. Développement d'un algorithme de génération automatique de lexiques pour catégoriser des articles en Java.</p>
+                            <div class="preview-field">
+                                <span>Nom</span>
+                                <p>Votre nom</p>
+                            </div>
+                            <div class="preview-field">
+                                <span>Email</span>
+                                <p>Votre email</p>
+                            </div>
+                            <div class="preview-field preview-field-full">
+                                <span>Message</span>
+                                <p>Votre message ici...</p>
                             </div>
                         </div>
-                    </article>
+                        <p id="contact-form-status" class="form-status" role="status">Le formulaire sera bientôt activé. Vous pouvez déjà me joindre via LinkedIn ou GitHub.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-content">
+                <p>&copy; 2026 Redon Brahimi</p>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/redon-brahimi-b49a30369/" target="_blank" rel="noopener noreferrer">
+                        <img src="ressources/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/redon-brahimi" target="_blank" rel="noopener noreferrer">
+                        <img src="ressources/github.png" alt="GitHub">
+                    </a>
                 </div>
             </div>
-        </section>
+        </footer>
+    </div>
 
-        <section id="contact" class="scroll" aria-labelledby="contact-heading">
-            <div class="container">
-                <h2 id="contact-heading">Contactez-moi</h2>
-                <form action="https://formspree.io/f/your_form_id" method="POST">
-                    <div><label for="fname">Prénom:</label><input type="text" id="fname" name="fname" autocomplete="given-name" placeholder="Votre prénom" required></div>
-                    <div><label for="lname">Nom:</label><input type="text" id="lname" name="lname" autocomplete="family-name" placeholder="Votre nom" required></div>
-                    <div><label for="email">Email:</label><input type="email" id="email" name="email" autocomplete="email" placeholder="Votre email" required></div>
-                    <div><label for="message">Message:</label><textarea id="message" name="message" placeholder="Votre message ici..." required></textarea></div>
-                    <div><button type="submit" class="submit-btn">Envoyer</button></div>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div>
-            <p>&copy; 2026 Redon Brahimi</p>
-            <a href="https://www.linkedin.com/in/redon-brahimi-b49a30369/" target="_blank" rel="noopener noreferrer"><img src="ressources/linkedin.png" alt="LinkedIn"></a>
-            <a href="https://github.com/redon-brahimi" target="_blank" rel="noopener noreferrer"><img src="ressources/github.png" alt="GitHub"></a>
-        </div>
-    </footer>
     <script src="script.js" defer></script>
 </body>
 </html>
