@@ -40,6 +40,7 @@ body::before {
     content: "";
     position: fixed;
     inset: 0;
+    z-index: -1;
     background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
     background-size: 56px 56px;
     mask-image: radial-gradient(circle at center, black 30%, transparent 80%);
@@ -480,6 +481,15 @@ textarea:focus-visible {
     gap: 1rem;
 }
 
+.contact-form-fields {
+    display: grid;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    min-width: 0;
+}
+
 .contact-form div {
     display: grid;
     gap: 0.5rem;
@@ -511,6 +521,16 @@ textarea:focus-visible {
 
 .submit-btn {
     width: 100%;
+}
+
+.contact-form-fields:disabled {
+    opacity: 0.82;
+}
+
+.contact-form-fields:disabled input,
+.contact-form-fields:disabled textarea,
+.contact-form-fields:disabled .submit-btn {
+    cursor: not-allowed;
 }
 
 .submit-btn:disabled {

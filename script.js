@@ -61,18 +61,28 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if ('IntersectionObserver' in window) {
-        const sections = document.querySelectorAll('main section[id]');
+        const sections = Array.from(document.querySelectorAll('main section[id]'));
+        const visibleSections = new Map();
         const navObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
-                if (!entry.isIntersecting) {
-                    return;
+                if (entry.isIntersecting) {
+                    visibleSections.set(entry.target.id, entry.intersectionRatio);
+                } else {
+                    visibleSections.delete(entry.target.id);
                 }
-
-                navLinks.forEach((link) => {
-                    link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
-                });
             });
-        }, { threshold: 0.45 });
+
+            const currentSection = [...visibleSections.entries()]
+                .sort((a, b) => b[1] - a[1])[0]?.[0];
+
+            if (!currentSection) {
+                return;
+            }
+
+            navLinks.forEach((link) => {
+                link.classList.toggle('active', link.getAttribute('href') === `#${currentSection}`);
+            });
+        }, { threshold: [0.2, 0.45, 0.7] });
 
         sections.forEach((section) => navObserver.observe(section));
     }

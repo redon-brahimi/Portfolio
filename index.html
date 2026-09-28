@@ -219,26 +219,28 @@
                     </div>
 
                     <form class="contact-form" aria-describedby="contact-form-status">
-                        <div>
-                            <label for="fname">Prénom</label>
-                            <input type="text" id="fname" name="fname" autocomplete="given-name" placeholder="Votre prénom" required>
-                        </div>
-                        <div>
-                            <label for="lname">Nom</label>
-                            <input type="text" id="lname" name="lname" autocomplete="family-name" placeholder="Votre nom" required>
-                        </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" autocomplete="email" placeholder="Votre email" required>
-                        </div>
-                        <div>
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Votre message ici..." required></textarea>
-                        </div>
-                        <p id="contact-form-status" class="form-status" role="status">Le formulaire sera bientôt activé. Vous pouvez déjà me joindre via LinkedIn ou GitHub.</p>
-                        <div>
-                            <button type="submit" class="button button-primary submit-btn" disabled aria-disabled="true">Formulaire bientôt disponible</button>
-                        </div>
+                        <fieldset class="contact-form-fields" disabled>
+                            <div>
+                                <label for="fname">Prénom</label>
+                                <input type="text" id="fname" name="fname" autocomplete="given-name" placeholder="Votre prénom" required>
+                            </div>
+                            <div>
+                                <label for="lname">Nom</label>
+                                <input type="text" id="lname" name="lname" autocomplete="family-name" placeholder="Votre nom" required>
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" autocomplete="email" placeholder="Votre email" required>
+                            </div>
+                            <div>
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Votre message ici..." required></textarea>
+                            </div>
+                            <p id="contact-form-status" class="form-status" role="status">Le formulaire sera bientôt activé. Vous pouvez déjà me joindre via LinkedIn ou GitHub.</p>
+                            <div>
+                                <button type="submit" class="button button-primary submit-btn">Formulaire bientôt disponible</button>
+                            </div>
+                        </fieldset>
                     </form>
                 </div>
             </section>
