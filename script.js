@@ -39,19 +39,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.18 });
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.18 });
 
-    revealElements.forEach((element) => {
-        element.classList.add('reveal');
-        observer.observe(element);
-    });
+        revealElements.forEach((element) => {
+            element.classList.add('reveal');
+            observer.observe(element);
+        });
+    } else {
+        revealElements.forEach((element) => element.classList.add('is-visible'));
+    }
 
     const sections = document.querySelectorAll('main section[id]');
     const navObserver = new IntersectionObserver((entries) => {
